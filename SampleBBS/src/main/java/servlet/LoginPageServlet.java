@@ -37,5 +37,4 @@ public class LoginPageServlet extends HttpServlet {
 		//doGetと同じ動作をしたいので，丸投げ
 		doGet(request, response);
 	}
-
 }

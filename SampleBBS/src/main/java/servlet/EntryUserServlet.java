@@ -58,8 +58,5 @@ public class EntryUserServlet extends HttpServlet {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("./WEB-INF/jsp/entryUser.jsp");
 			dispatcher.forward(request, response);
 		}
-
-
 	}
-
 }

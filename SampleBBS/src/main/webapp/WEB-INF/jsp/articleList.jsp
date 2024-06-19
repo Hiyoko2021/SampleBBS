@@ -23,6 +23,10 @@
 	<!-- EntryArticlePageServletにハイパーリンク．
 	ハイパーリンクによるアクセスは，GETアクセスとなり，サーブレットのdoGet()が呼ばれる． -->
 	<a href = ./EntryArticlePageServlet>新規記事登録</a><br><br>
+	
+　　<!-- EntryArticlePageServletにハイパーリンク．
+	ハイパーリンクによるアクセスは，GETアクセスとなり，サーブレットのdoGet()が呼ばれる． -->
+	<a href = ./UpdateArticlePageServlet>記事の更新</a><br><br>
 
 	<!-- 直前のサーブレットでrequestにsetAttributeしておいたオブジェクトを取り出す．
 	普通に取り出すとObject型になってしまうので，適宜キャストして変数に受け取る． -->

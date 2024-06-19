@@ -13,11 +13,11 @@ import beans.Article;
 import dao.Dao;
 
 //SampleBBS/EntryArticleServletにアクセスされると動作
-@WebServlet("/EntryArticleServlet")
-public class EntryArticleServlet extends HttpServlet {
+@WebServlet("/UpdateArticleServlet")
+public class UpdateArticleServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-    public EntryArticleServlet() {
+    public UpdateArticleServlet() {
         super();
     }
 
@@ -45,7 +45,7 @@ public class EntryArticleServlet extends HttpServlet {
 		dao.insertArticle(articleToEntry);
 
 //		//自身が登録した最新の記事を取り出す場合は下記を使用
-//		Article article = dao.getNewestArticleByEditorId(editorId);
+		Article article = dao.getNewestArticleByEditorId(editorId);
 
 		//記事リストに戻る
 		RequestDispatcher dispatcher = request.getRequestDispatcher("./ArticleListServlet");
